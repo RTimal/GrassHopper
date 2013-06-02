@@ -36,7 +36,7 @@
         
         
 
-        self.view.backgroundColor = [UIColor colorWithRed:107.f/255.f green:186.f/255.f blue:112.f/255.f alpha:1.f];
+        self.backgroundLayer.backgroundColor = [UIColor colorWithRed:107.f/255.f green:186.f/255.f blue:112.f/255.f alpha:1.f];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                        initWithTarget:self
                                        action:@selector(dismissKeyboard)];
@@ -67,7 +67,11 @@
     
     MMWallViewController *wall = [[MMWallViewController alloc] init];
     MMProfileViewController *profile = [[MMProfileViewController alloc] init];
-    MMPersonSearchViewController *personSearch = [[MMPersonSearchViewController alloc] init];
+    MMPersonSearchViewController *ps = [[MMPersonSearchViewController alloc] init];
+    
+    
+    UINavigationController *personSearch = [[UINavigationController alloc] init];
+    personSearch.viewControllers = @[ps];
     
     [UIView animateWithDuration:1.0f animations:^{
         self.view.frame = CGRectMake(0,640,320,640);

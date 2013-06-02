@@ -9,7 +9,7 @@
 #import "MMCategoriesViewController.h"
 
 @interface MMCategoriesViewController ()
-
+@property(nonatomic, retain) NSMutableArray *categories;
 @end
 
 @implementation MMCategoriesViewController
@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.categories = [[NSMutableArray alloc]initWithArray:@[@"Health", @"Lifestyle", @"Fitness", @"Education"]];
     }
     return self;
 }

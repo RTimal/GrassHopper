@@ -45,7 +45,14 @@
     
     [bb setMentor:@"Vivek"];
     [bb1 setMentor:@"Nikhil"];
-    [bb2 setMentor:@"Freddie"];
+    [bb2 setMentor:@"Cavaugn"];
+    [bb changeImage:@"picvivek.jpg"];
+    [bb2 changeImage:@"cavaugn.jpg"];
+    [bb1 changeImage:@"nik.jpg"];
+    [bb changeName:@"Vivek K."];
+    [bb2 changeName:@"Cavaugn A."];
+    [bb1 changeName:@"Nikhil P."];
+    
     //setmentorc pic
     //setmentorpic
     [self pushViewController:bb animated:NO];

@@ -11,5 +11,5 @@
 @interface MMFriendsListViewController : UIViewController
 
 -(void)changeTitle:(NSString *)newTitle;;
-
+@property(nonatomic, retain) NSMutableArray *categories;
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMPersonSearchViewController : UIViewController
+@interface MMPersonSearchViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) NSMutableArray *categories;
 
 @end

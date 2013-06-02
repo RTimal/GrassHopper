@@ -22,7 +22,10 @@
 
     MMWallViewController *wall = [[MMWallViewController alloc] initWithNibName:@"MMWallViewController" bundle:nil];
     MMProfileViewController *profile = [[MMProfileViewController alloc] initWithNibName:@"MMProfileViewController" bundle:nil];
-    MMPersonSearchViewController *personFinder = [[MMPersonSearchViewController alloc] initWithNibName:@"MMPersonSearchViewController" bundle:nil];
+    MMPersonSearchViewController *pf = [[MMPersonSearchViewController alloc] initWithNibName:@"MMPersonSearchViewController" bundle:nil];
+    UINavigationController *personFinder = [[UINavigationController alloc] init];
+    personFinder.viewControllers = @[pf];
+    
     MMLoginViewController *login = [[MMLoginViewController alloc] initWithNibName:@"MMLoginViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:107.f/255.f green:186.f/255.f blue:112.f/255.f alpha:1.f]];
