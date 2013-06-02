@@ -22,7 +22,7 @@
     if (self) {
         self.title = NSLocalizedString(@"Mentor Board", @"Blackboards");
         self.tabBarItem.image = [UIImage imageNamed:@"speech_bubble_transparent"];
-        self.messages = [[NSMutableArray alloc] init];
+        self.messages = [[NSMutableArray alloc] initWithArray:@[@"Vivek: checkout this book!", @" "]];
     }
     return self;
 }
@@ -39,6 +39,10 @@
     return 1;
 }
 
+-(void)openSafariWithLink: (NSString*) url {
+    
+}
+
 -(void)changeImage:(NSString *)image {
     self.image = image;
 }
@@ -53,6 +57,9 @@
     
     cell.textLabel.text = self.messages[indexPath.row];
     
+    if(indexPath.row == 1) {
+        cell.imageView.image = [UIImage imageNamed:@"sat.png"];
+    }
     return cell;
 }
 
@@ -74,7 +81,6 @@
     if(self.namelabel != nil) {
         self.namelabel.text = self.name;
     }
-    
     
     self.imageradius.image = [UIImage imageNamed:self.image];
     [self.imageradius.layer setCornerRadius:10.f];

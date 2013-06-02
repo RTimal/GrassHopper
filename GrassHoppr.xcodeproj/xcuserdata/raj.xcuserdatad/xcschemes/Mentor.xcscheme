@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "35FA75ED175A8A9A00861756"
-               BuildableName = "Mentor.app"
+               BuildableName = "GrassHoppr.app"
                BlueprintName = "GrassHoppr"
                ReferencedContainer = "container:GrassHoppr.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35FA75ED175A8A9A00861756"
-            BuildableName = "Mentor.app"
+            BuildableName = "GrassHoppr.app"
             BlueprintName = "GrassHoppr"
             ReferencedContainer = "container:GrassHoppr.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35FA75ED175A8A9A00861756"
-            BuildableName = "Mentor.app"
+            BuildableName = "GrassHoppr.app"
             BlueprintName = "GrassHoppr"
             ReferencedContainer = "container:GrassHoppr.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35FA75ED175A8A9A00861756"
-            BuildableName = "Mentor.app"
+            BuildableName = "GrassHoppr.app"
             BlueprintName = "GrassHoppr"
             ReferencedContainer = "container:GrassHoppr.xcodeproj">
          </BuildableReference>

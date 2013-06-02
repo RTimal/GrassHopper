@@ -32,6 +32,9 @@
 		35BA45EC175BA31100D1221F /* nik.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35BA45EB175BA31100D1221F /* nik.jpg */; };
 		35BA45EE175BAB2800D1221F /* Grasshoppr_Final_02062013_cv_1136x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BA45ED175BAB2800D1221F /* Grasshoppr_Final_02062013_cv_1136x640.png */; };
 		35BA45F2175BAC4200D1221F /* Grasshoppr_300.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BA45F1175BAC4200D1221F /* Grasshoppr_300.png */; };
+		35BA45F4175BAE0000D1221F /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BA45F3175BAE0000D1221F /* default@2x.png */; };
+		35BA45F6175BAEA500D1221F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BA45EF175BAB3300D1221F /* Default-568h@2x.png */; };
+		35BA45F8175BB4F100D1221F /* sat.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BA45F7175BB4F100D1221F /* sat.png */; };
 		35FA75F2175A8A9A00861756 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA75F1175A8A9A00861756 /* UIKit.framework */; };
 		35FA75F4175A8A9A00861756 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA75F3175A8A9A00861756 /* Foundation.framework */; };
 		35FA75F6175A8A9A00861756 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA75F5175A8A9A00861756 /* CoreGraphics.framework */; };
@@ -105,6 +108,8 @@
 		35BA45ED175BAB2800D1221F /* Grasshoppr_Final_02062013_cv_1136x640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Grasshoppr_Final_02062013_cv_1136x640.png; path = ../../Grasshoppr_Final_02062013_cv_1136x640.png; sourceTree = "<group>"; };
 		35BA45EF175BAB3300D1221F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		35BA45F1175BAC4200D1221F /* Grasshoppr_300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Grasshoppr_300.png; path = ../../Grasshoppr_300.png; sourceTree = "<group>"; };
+		35BA45F3175BAE0000D1221F /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default@2x.png"; path = "../../default@2x.png"; sourceTree = "<group>"; };
+		35BA45F7175BB4F100D1221F /* sat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sat.png; path = ../../sat.png; sourceTree = "<group>"; };
 		35FA75EE175A8A9A00861756 /* GrassHoppr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrassHoppr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA75F1175A8A9A00861756 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		35FA75F3175A8A9A00861756 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,7 +121,6 @@
 		35FA7600175A8A9A00861756 /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
 		35FA7601175A8A9A00861756 /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
 		35FA7603175A8A9A00861756 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		35FA7605175A8A9A00861756 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		35FA7607175A8A9A00861756 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		35FA7609175A8A9A00861756 /* MMFriendsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFriendsListViewController.h; sourceTree = "<group>"; };
 		35FA760A175A8A9A00861756 /* MMFriendsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFriendsListViewController.m; sourceTree = "<group>"; };
@@ -252,7 +256,6 @@
 				35FA75FD175A8A9A00861756 /* main.m */,
 				35FA75FF175A8A9A00861756 /* GrassHoppr-Prefix.pch */,
 				35FA7603175A8A9A00861756 /* Default.png */,
-				35FA7605175A8A9A00861756 /* Default@2x.png */,
 				35FA7607175A8A9A00861756 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -331,11 +334,13 @@
 				35FA760C175A8A9A00861756 /* first.png */,
 				35FA760E175A8A9A00861756 /* first@2x.png */,
 				35BA45ED175BAB2800D1221F /* Grasshoppr_Final_02062013_cv_1136x640.png */,
+				35BA45F3175BAE0000D1221F /* default@2x.png */,
 				35FA7642175AA2F000861756 /* cog_02.png */,
 				35BA45E9175BA2C500D1221F /* cavaugn.jpg */,
 				35BA45DD175B9B7600D1221F /* Grasshoppr_72.png */,
 				35BA45EB175BA31100D1221F /* nik.jpg */,
 				35FA7646175AA31D00861756 /* speech_bubble_transparent.png */,
+				35BA45F7175BB4F100D1221F /* sat.png */,
 				35BA45C7175B402600D1221F /* Happy_smiley_face.png */,
 				35BA45DB175B836E00D1221F /* picvivek.jpg */,
 				35BA45C5175B3F5D00D1221F /* 330cd2635da1ea0c092240a0f41b87f7.jpg */,
@@ -433,6 +438,9 @@
 				35BA45EC175BA31100D1221F /* nik.jpg in Resources */,
 				35BA45EE175BAB2800D1221F /* Grasshoppr_Final_02062013_cv_1136x640.png in Resources */,
 				35BA45F2175BAC4200D1221F /* Grasshoppr_300.png in Resources */,
+				35BA45F4175BAE0000D1221F /* default@2x.png in Resources */,
+				35BA45F6175BAEA500D1221F /* Default-568h@2x.png in Resources */,
+				35BA45F8175BB4F100D1221F /* sat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

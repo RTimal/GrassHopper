@@ -36,7 +36,7 @@
         
         
 
-        self.backgroundLayer.backgroundColor = [UIColor colorWithRed:107.f/255.f green:186.f/255.f blue:112.f/255.f alpha:1.f];
+        //self.backgroundLayer.backgroundColor = [UIColor colorWithRed:107.f/255.f green:255.f/255.f blue:255.f/255.f alpha:1.f];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                        initWithTarget:self
                                        action:@selector(dismissKeyboard)];
@@ -93,10 +93,10 @@
 {
     
     [super viewDidLoad];
-    self.backgroundLayer.layer.cornerRadius = 10.0f;
+    [self.backgroundLayer.layer setCornerRadius:10.f];
     self.backgroundLayer.opaque = NO;
-    self.backgroundLayer.layer.masksToBounds = NO;
-    self.backgroundLayer.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.5];
+    self.backgroundLayer.layer.masksToBounds = YES;
+    //self.backgroundLayer.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.5];
     
     // Do any additional setup after loading the view from its nib.
 }
