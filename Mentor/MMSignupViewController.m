@@ -8,6 +8,7 @@
 
 #import "MMSignupViewController.h"
 
+
 @interface MMSignupViewController ()
 
 @end
@@ -30,7 +31,8 @@
     [super viewDidLoad];
    // self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(hideSignup)];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(hideSignup)];
-
+    self.navigationItem.title = @"Grasshoppr Sign Up";
+    self.submitButton.titleLabel.textColor = [UIColor colorWithRed:107.f/255.f green:186.f/255.f blue:112.f/255.f alpha:1.f];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -39,23 +41,15 @@
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    if(component == 1) {
-        return [self.categories count];
-    } else if(component == 2) {
         return [self.educationQuestions count];
-    }
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 2;
+    return 1;
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    if(component == 1) {
-        return @"Categories";
-    } else {
-        return @"Goals";
-    }
+    return self.educationQuestions[row];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,4 +58,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setSubmitButton:nil];
+    [super viewDidUnload];
+}
 @end

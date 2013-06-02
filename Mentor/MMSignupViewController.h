@@ -10,6 +10,7 @@
 
 @interface MMSignupViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 @property(nonatomic, retain) NSMutableArray *educationQuestions;
 @property(nonatomic, retain) NSMutableArray *categories;
 

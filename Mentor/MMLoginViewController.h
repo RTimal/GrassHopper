@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *email;
 @property (weak, nonatomic) IBOutlet UIView *backgroundLayer;
 - (IBAction)showSignup:(id)sender;
+- (IBAction)Login:(id)sender;
 
 @end

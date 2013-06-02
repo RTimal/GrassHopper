@@ -34,6 +34,8 @@
         self.tabBarController.viewControllers = @[wall, personFinder, profile];
     }
     
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

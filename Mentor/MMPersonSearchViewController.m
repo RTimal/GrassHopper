@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Find People", @"Mentee");
+        self.title = NSLocalizedString(@"Find Mentors", @"Mentee");
         self.tabBarItem.image = [UIImage imageNamed:@"magnifying_glass"];
     }
     return self;

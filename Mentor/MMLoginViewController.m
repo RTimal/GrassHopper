@@ -9,6 +9,10 @@
 #import "MMLoginViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "MMSignupViewController.h"
+#import "MMFriendsListViewController.h"
+#import "MMWallViewController.h"
+#import "MMProfileViewController.h"
+#import "MMPersonSearchViewController.h"
 
 @interface MMLoginViewController ()
 
@@ -29,7 +33,8 @@
          */
         [[self.email layer] setBorderColor:[[UIColor colorWithRed:255.f/255.0 green:255.f/255.0 blue:255.f/255.0 alpha:1.0] CGColor]];
         [[self.email layer] setBorderColor:[[UIColor colorWithRed:255.f/255.0 green:255.f/255.0 blue:255.f/255.0 alpha:1.0] CGColor]];
-       
+        
+        
 
         self.view.backgroundColor = [UIColor colorWithRed:107.f/255.f green:186.f/255.f blue:112.f/255.f alpha:1.f];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
@@ -56,6 +61,20 @@
     [nav setWantsFullScreenLayout:NO];
     [nav setViewControllers:@[signup]];
     [self presentModalViewController:nav animated:YES];
+}
+
+- (IBAction)Login:(id)sender {
+    
+    MMWallViewController *wall = [[MMWallViewController alloc] init];
+    MMProfileViewController *profile = [[MMProfileViewController alloc] init];
+    MMPersonSearchViewController *personSearch = [[MMPersonSearchViewController alloc] init];
+    
+    [UIView animateWithDuration:1.0f animations:^{
+        self.view.frame = CGRectMake(0,640,320,640);
+    } completion:^(BOOL success){
+         self.tabBarController.viewControllers = @[wall, personSearch, profile];
+    }];
+    
 }
 
 -(void)hideSignup {
